@@ -1,0 +1,5 @@
+cpuinfo 
+
+processor -> cores lógicos
+core id -> cores físicos 
+physical_id -> chips de procesamiento 

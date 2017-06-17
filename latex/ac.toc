@@ -1,0 +1,11 @@
+\select@language {spanish}
+\select@language {spanish}
+\contentsline {section}{\numberline {1}Tema 1: Arquitecturas paralelas: clasificaci\IeC {\'o}n y prestaciones}{2}{section.1}
+\contentsline {subsection}{\numberline {1.1}Clasificaci\IeC {\'o}n del paralelismo impl\IeC {\'\i }cito en una aplicaci\IeC {\'o}n}{2}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Evaluaci\IeC {\'o}n de prestaciones}{3}{subsection.1.2}
+\contentsline {subsubsection}{\numberline {1.2.1}Tiempo de CPU de un programa.}{3}{subsubsection.1.2.1}
+\contentsline {subsubsection}{\numberline {1.2.2}Medidas de la velocidad de procesamiento y benchmarks.}{5}{subsubsection.1.2.2}
+\contentsline {subsubsection}{\numberline {1.2.3}Estimar el tiempo de CPU}{6}{subsubsection.1.2.3}
+\contentsline {subsubsection}{\numberline {1.2.4}Ganancia de velocidad y ley de Amdahl}{7}{subsubsection.1.2.4}
+\contentsline {subsection}{\numberline {1.3}Cuestiones tema 1}{8}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}Ejercicios tema 1}{8}{subsection.1.4}

@@ -1,0 +1,113 @@
+	.File	"daxpy.c"
+	.text
+	.p2align 4,,15
+	.globl	suma_prod
+	.type	suma_prod, @function
+suma_prod:
+.LFB14:
+	.cfi_startproc
+	imull	%esi, %edi
+	leal	(%rdi,%rdx), %eax
+	ret
+	.cfi_endproc
+.LFE14:
+	.size	suma_prod, .-suma_prod
+	.section	.rodata.str1.1,"aMS",@progbits,1
+.LC0:
+	.string	"a=%d b=%d n=%d\n"
+.LC1:
+	.string	"resultado= %d\n"
+.LC3:
+	.string	"Tiempo= %f ms\n"
+.LC4:
+	.string	"a"
+.LC5:
+	.string	"dalsi_salida"
+.LC6:
+	.string	"Error opening file."
+.LC7:
+	.string	"\nO3\t%f"
+	.section	.text.startup,"ax",@progbits
+	.p2align 4,,15
+	.globl	main
+	.type	main, @function
+main:
+.LFB15:
+	.cfi_startproc
+	pushq	%rbp
+	.cfi_def_cfa_offset 16
+	.cfi_offset 6, -16
+	pushq	%rbx
+	.cfi_def_cfa_offset 24
+	.cfi_offset 3, -24
+	movl	$10000, %ebx
+	subq	$24, %rsp
+	.cfi_def_cfa_offset 48
+	call	clock
+	movq	%rax, %rbp
+	.p2align 4,,10
+	.p2align 3
+.L3:
+	movl	$6000, %ecx
+	movl	$2, %edx
+	movl	$1, %esi
+	movl	$.LC0, %edi
+	xorl	%eax, %eax
+	call	printf
+	xorl	%eax, %eax
+	movl	$6002, %esi
+	movl	$.LC1, %edi
+	call	printf
+	subl	$1, %ebx
+	jne	.L3
+	call	clock
+	movq	%rbp, %rsi
+	movq	%rax, %rdi
+	call	difftime
+	movapd	%xmm0, %xmm1
+	movl	$.LC3, %edi
+	movl	$1, %eax
+	divsd	.LC2(%rip), %xmm1
+	movapd	%xmm1, %xmm0
+	movsd	%xmm1, 8(%rsp)
+	call	printf
+	movl	$.LC4, %esi
+	movl	$.LC5, %edi
+	call	fopen
+	testq	%rax, %rax
+	movq	%rax, %rbx
+	movsd	8(%rsp), %xmm1
+	je	.L8
+.L4:
+	movapd	%xmm1, %xmm0
+	movq	%rbx, %rdi
+	movl	$.LC7, %esi
+	movl	$1, %eax
+	call	fprintf
+	movq	%rbx, %rdi
+	call	fclose
+	addq	$24, %rsp
+	.cfi_remember_state
+	.cfi_def_cfa_offset 24
+	xorl	%eax, %eax
+	popq	%rbx
+	.cfi_def_cfa_offset 16
+	popq	%rbp
+	.cfi_def_cfa_offset 8
+	ret
+.L8:
+	.cfi_restore_state
+	movl	$.LC6, %edi
+	call	perror
+	movsd	8(%rsp), %xmm1
+	jmp	.L4
+	.cfi_endproc
+.LFE15:
+	.size	main, .-main
+	.section	.rodata.cst8,"aM",@progbits,8
+	.align 8
+.LC2:
+	.long	0
+	.long	1083129856
+	.ident	"GCC: (GNU) 6.3.1 20170109"
+	.section	.note.GNU-stack,"",@progbits

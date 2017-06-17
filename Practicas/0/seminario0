@@ -1,0 +1,2 @@
+Compilar con "-f openmp" 
+omp_get_thread_num() -> identificador de la hebra.

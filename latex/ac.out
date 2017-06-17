@@ -1,0 +1,9 @@
+\BOOKMARK [1][-]{section.1}{Tema 1: Arquitecturas paralelas: clasificaci\363n y prestaciones}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Clasificaci\363n del paralelismo impl\355cito en una aplicaci\363n}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Evaluaci\363n de prestaciones}{section.1}% 3
+\BOOKMARK [3][-]{subsubsection.1.2.1}{Tiempo de CPU de un programa.}{subsection.1.2}% 4
+\BOOKMARK [3][-]{subsubsection.1.2.2}{Medidas de la velocidad de procesamiento y benchmarks.}{subsection.1.2}% 5
+\BOOKMARK [3][-]{subsubsection.1.2.3}{Estimar el tiempo de CPU}{subsection.1.2}% 6
+\BOOKMARK [3][-]{subsubsection.1.2.4}{Ganancia de velocidad y ley de Amdahl}{subsection.1.2}% 7
+\BOOKMARK [2][-]{subsection.1.3}{Cuestiones tema 1}{section.1}% 8
+\BOOKMARK [2][-]{subsection.1.4}{Ejercicios tema 1}{section.1}% 9

@@ -1,0 +1,40 @@
+tamaño	tiempo	programa
+16384	0.000188	secuencial
+32768	0.000210	secuencial
+65536	0.000312	secuencial
+131072	0.000502	secuencial
+262144	0.001095	secuencial
+524288	0.001930	secuencial
+1048576	0.003559	secuencial
+2097152	0.006665	secuencial
+4194304	0.017623	secuencial
+8388608	0.025550	secuencial
+16777216	0.050730	secuencial
+33554432	0.103983	secuencial
+67108864	0.202278	secuencial
+16384	0.005576	paralelo (for)
+32768	0.002012	paralelo (for)
+65536	0.006869	paralelo (for)
+131072	0.002400	paralelo (for)
+262144	0.003088	paralelo (for)
+524288	0.007902	paralelo (for)
+1048576	0.011260	paralelo (for)
+2097152	0.013258	paralelo (for)
+4194304	0.023313	paralelo (for)
+8388608	0.034215	paralelo (for)
+16777216	0.067791	paralelo (for)
+33554432	0.137866	paralelo (for)
+67108864	0.270689	paralelo (for)
+16384	0.005132	paralelo (section)
+32768	0.004438	paralelo (section)
+65536	0.000838	paralelo (section)
+131072	0.004012	paralelo (section)
+262144	0.001948	paralelo (section)
+524288	0.003119	paralelo (section)
+1048576	0.004616	paralelo (section)
+2097152	0.012455	paralelo (section)
+4194304	0.022239	paralelo (section)
+8388608	0.033865	paralelo (section)
+16777216	0.067106	paralelo (section)
+33554432	0.133502	paralelo (section)
+67108864	0.263114	paralelo (section)
